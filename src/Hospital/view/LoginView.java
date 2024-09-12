@@ -4,27 +4,25 @@ import java.awt.*;
 public class LoginView {
 
     public static void main(String[] args) {
-        // Crear el marco de la ventana
         JFrame frame = new JFrame("Login");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300, 200);
-        frame.setLocationRelativeTo(null); // Centrar la ventana
+        frame.setLocationRelativeTo(null); 
 
-        // Crear el panel principal
         JPanel panel = new JPanel();
-        panel.setLayout(new GridBagLayout()); // Para alineación controlada
+        panel.setLayout(new GridBagLayout()); 
         GridBagConstraints constraints = new GridBagConstraints();
-        constraints.insets = new Insets(5, 5, 5, 5); // Espaciado entre componentes
+        constraints.insets = new Insets(5, 5, 5, 5); 
         constraints.fill = GridBagConstraints.HORIZONTAL;
 
-        // Crear las etiquetas y campos de texto
+      
         JLabel labelCorreo = new JLabel("Correo:");
         JTextField textCorreo = new JTextField(15);
         JLabel labelContrasena = new JLabel("Contraseña:");
         JPasswordField textContrasena = new JPasswordField(15);
         JButton buttonLogin = new JButton("Iniciar sesión");
 
-        // Agregar componentes al panel con restricciones
+    
         constraints.gridx = 0;
         constraints.gridy = 0;
         panel.add(labelCorreo, constraints);
@@ -43,7 +41,7 @@ public class LoginView {
         constraints.gridy = 2;
         panel.add(buttonLogin, constraints);
 
-        // Añadir el panel a la ventana
+       
         frame.add(panel);
         frame.setVisible(true);
     }
