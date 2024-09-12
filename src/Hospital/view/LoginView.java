@@ -1,64 +1,48 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class LoginView extends JFrame {
-
-    // Componentes de la interfaz
-    private JTextField usuarioCampo;
-    private JPasswordField contrasenaCampo;
-    private JButton botonLogin;
-    private JLabel mensajeLabel;
-
-    public LoginView() {
-        // Configuración del marco
-        setTitle("Inicio de Sesión");
-        setSize(300, 200);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
-        setLayout(new GridLayout(4, 1));
-
-        // Campo de usuario
-        usuarioCampo = new JTextField();
-        add(new JLabel("Usuario:"));
-        add(usuarioCampo);
-
-        // Campo de contraseña
-        contrasenaCampo = new JPasswordField();
-        add(new JLabel("Contraseña:"));
-        add(contrasenaCampo);
-
-        // Botón de inicio de sesión
-        botonLogin = new JButton("Iniciar Sesión");
-        add(botonLogin);
-
-        // Mensaje
-        mensajeLabel = new JLabel("", SwingConstants.CENTER);
-        add(mensajeLabel);
-
-        // Acción del botón
-        botonLogin.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String usuario = usuarioCampo.getText();
-                String contrasena = new String(contrasenaCampo.getPassword());
-
-                // Comprobación simple del usuario y la contraseña
-                if (usuario.equals("admin") && contrasena.equals("1234")) {
-                    mensajeLabel.setText("Inicio de sesión exitoso");
-                    mensajeLabel.setForeground(Color.GREEN);
-                } else {
-                    mensajeLabel.setText("Credenciales incorrectas");
-                    mensajeLabel.setForeground(Color.RED);
-                }
-            }
-        });
-
-        setVisible(true);
-    }
+public class LoginView {
 
     public static void main(String[] args) {
-        new LoginView();
+        JFrame frame = new JFrame("Login");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(300, 200);
+        frame.setLocationRelativeTo(null); 
+
+        JPanel panel = new JPanel();
+        panel.setLayout(new GridBagLayout()); 
+        GridBagConstraints constraints = new GridBagConstraints();
+        constraints.insets = new Insets(5, 5, 5, 5); 
+        constraints.fill = GridBagConstraints.HORIZONTAL;
+
+      
+        JLabel labelCorreo = new JLabel("Correo:");
+        JTextField textCorreo = new JTextField(15);
+        JLabel labelContrasena = new JLabel("Contraseña:");
+        JPasswordField textContrasena = new JPasswordField(15);
+        JButton buttonLogin = new JButton("Iniciar sesión");
+
+    
+        constraints.gridx = 0;
+        constraints.gridy = 0;
+        panel.add(labelCorreo, constraints);
+
+        constraints.gridx = 1;
+        panel.add(textCorreo, constraints);
+
+        constraints.gridx = 0;
+        constraints.gridy = 1;
+        panel.add(labelContrasena, constraints);
+
+        constraints.gridx = 1;
+        panel.add(textContrasena, constraints);
+
+        constraints.gridx = 1;
+        constraints.gridy = 2;
+        panel.add(buttonLogin, constraints);
+
+       
+        frame.add(panel);
+        frame.setVisible(true);
     }
 }
