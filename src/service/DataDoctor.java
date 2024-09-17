@@ -1,6 +1,6 @@
-package hospital.services;
+package Hospital.service;
 
-import hospital.model.Doctor;
+import Hospital.model.Doctor;
 import java.util.ArrayList;
 
 public class DataDoctor {
@@ -10,11 +10,11 @@ public class DataDoctor {
     public DataDoctor() {
         data = new ArrayList<>();
 
-        data.add(new Doctor("Dr. Diego Rosales", "drosales@hospital.com", "Pediatría", "2596-9866", "drosales", "rdrfl89"));
-        data.add(new Doctor("Dra. Andrea Leal", "aleal@hospital.com", "Dermatología", "4215-9863", "aleal", "andrleal78"));
-        data.add(new Doctor("Dr. Manuel Gutiérrez", "mgutierrez@hospital.com", "Ginecología", "1248-9633", "mguttierrez", "gutierrexm45"));
-        data.add(new Doctor("Dra. Pablo Arco", "parco@hospital.com", "Nutrición", "1478-9658", "parco", "pabloarco74"));
-        data.add(new Doctor("Dr. Dilan Tejeda", "dtejeda@hospital.com", "Traumatología", "1248-9744", "dtejeda", "tejedxd77"));
+        data.add(new Doctor("Dr. Damián Tejeda", "dtejeda@hospital.com", "Pediatría", "1589-9633", "dtejeda", "tejedad11"));
+        data.add(new Doctor("Dra. Adriana Lucas", "alucas@hospital.com", "Nutrición", "7856-9855", "alucas", "adrilucas16"));
+        data.add(new Doctor("Dr. Luis Rosales", "lrosales@hospital.com", "Dermatología", "1259-6532", "lrosales", "rosalesll58"));
+        data.add(new Doctor("Dra. Angie Castro", "acastro@hospital.com", "Pediatrñia", "1254-9877", "acastro", "castroang99"));
+        data.add(new Doctor("Dr. Gerardo Larios", "glarios@hospital.com", "Neurología", "3698-7412", "glarios", "lariosg8966"));
     }
 
 
