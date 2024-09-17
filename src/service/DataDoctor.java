@@ -10,11 +10,11 @@ public class DataDoctor {
     public DataDoctor() {
         data = new ArrayList<>();
 
-        data.add(new Doctor("Dr. Pedro Alvarado", "pedro.alvarado@hospital.com", "Cardiología", "555-1234", "yo", "123"));
-        data.add(new Doctor("Dra. Lucía Torres", "lucia.torres@hospital.com", "Dermatología", "555-5678", "luciatorres", "lucia456"));
-        data.add(new Doctor("Dr. Miguel López", "miguel.lopez@hospital.com", "Pediatría", "555-9101", "miguellopez", "miguel789"));
-        data.add(new Doctor("Dra. Carolina Morales", "carolina.morales@hospital.com", "Ginecología", "555-1122", "caromorales", "carolina101"));
-        data.add(new Doctor("Dr. Eduardo Reyes", "eduardo.reyes@hospital.com", "Neurología", "555-3344", "eduardoreyes", "edu202"));
+        data.add(new Doctor("Dr. Diego Rosales", "drosales@hospital.com", "Pediatría", "2596-9866", "drosales", "rdrfl89"));
+        data.add(new Doctor("Dra. Andrea Leal", "aleal@hospital.com", "Dermatología", "4215-9863", "aleal", "andrleal78"));
+        data.add(new Doctor("Dr. Manuel Gutiérrez", "mgutierrez@hospital.com", "Ginecología", "1248-9633", "mguttierrez", "gutierrexm45"));
+        data.add(new Doctor("Dra. Pablo Arco", "parco@hospital.com", "Nutrición", "1478-9658", "parco", "pabloarco74"));
+        data.add(new Doctor("Dr. Dilan Tejeda", "dtejeda@hospital.com", "Traumatología", "1248-9744", "dtejeda", "tejedxd77"));
     }
 
 
