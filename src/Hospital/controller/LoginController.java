@@ -33,7 +33,7 @@ public class LoginController {
             System.out.println("Login exitoso:");
             System.out.println("Nombre: " + result.get("Nombre"));
             System.out.println("Correo: " + result.get("Correo"));
-            System.out.println("Especialidad: " + result.get("Especialidad"));
+            System.out.println ("Especialidad: " + result.get("Especialidad"));
         }
     }
 }
