@@ -73,3 +73,4 @@ public class DoctorLayout extends JFrame {
         new DoctorLayout();
     }
 }
+
