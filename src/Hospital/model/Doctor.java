@@ -17,7 +17,7 @@ public class Doctor {
         this.contraseña = contraseña;
     }
 
-    // Get y Set
+    // --- [ Métodos Getter y Setter ]
     public String getNombre() {
         return nombre;
     }

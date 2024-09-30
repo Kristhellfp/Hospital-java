@@ -1,7 +1,6 @@
 package Hospital.backEnde;
-
-import Hospital.service.DataDoctor;
 import Hospital.model.Doctor;
+import Hospital.service.DataDoctor;
 import java.util.HashMap;
 
 public class BackEnde {
