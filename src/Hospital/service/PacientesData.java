@@ -32,26 +32,27 @@ public class PacientesData {
     }
 
     private void cargarDatosPacientes() {
-        pacientes.add(new Paciente("Juan Pérez", "1990-01-15", "07:00", "Consulta general"));
-        pacientes.add(new Paciente("María López", "1988-04-22", "07:30", "Chequeo"));
-        pacientes.add(new Paciente("Carlos Ruiz", "1995-07-10", "08:00", "Control de diabetes"));
-        pacientes.add(new Paciente("Ana Martínez", "1992-11-05", "08:30", "Cita de seguimiento"));
-        pacientes.add(new Paciente("Luis González", "1985-03-15", "09:00", "Chequeo"));
-        pacientes.add(new Paciente("Sofía Torres", "1993-06-18", "09:30", "Consulta de alergias"));
-        pacientes.add(new Paciente("Fernando Hernández", "1989-08-24", "10:00", "Control de hipertensión"));
-        pacientes.add(new Paciente("Isabel Castro", "1991-12-12", "10:30", "Chequeo"));
-        pacientes.add(new Paciente("Jorge Silva", "1994-02-28", "11:00", "Cita de seguimiento"));
-        pacientes.add(new Paciente("Patricia Ruiz", "1987-05-19", "11:30", "Consulta general"));
-        pacientes.add(new Paciente("Ricardo Morales", "1996-03-22", "12:00", "Control de diabetes"));
-        pacientes.add(new Paciente("Laura Reyes", "1990-10-30", "12:30", "Chequeo"));
-        pacientes.add(new Paciente("Felipe Gómez", "1988-01-15", "13:00", "Consulta de alergias"));
-        pacientes.add(new Paciente("Gloria Vega", "1992-12-05", "13:30", "Control de hipertensión"));
-        pacientes.add(new Paciente("Andrés Castro", "1995-08-20", "14:00", "Cita de seguimiento"));
-        pacientes.add(new Paciente("Diana Torres", "1986-06-11", "14:30", "Consulta general"));
-        pacientes.add(new Paciente("Cristian Pérez", "1993-11-30", "15:00", "Chequeo"));
-        pacientes.add(new Paciente("Karla Sánchez", "1991-09-25", "15:30", "Consulta de alergias"));
-        pacientes.add(new Paciente("Julio Fernández", "1994-04-10", "16:00", "Control de diabetes"));
-        pacientes.add(new Paciente("Beatriz López", "1989-02-14", "16:30", "Chequeo"));
+        pacientes.add(new Paciente("Mateo Ramírez", "1990-03-21", "07:00", "Consulta general"));
+        pacientes.add(new Paciente("Lucía Fernández", "1987-05-17", "07:30", "Chequeo de rutina"));
+        pacientes.add(new Paciente("David Ortega", "1996-06-12", "08:00", "Control de presión arterial"));
+        pacientes.add(new Paciente("Claudia Morales", "1993-08-07", "08:30", "Cita de seguimiento"));
+        pacientes.add(new Paciente("Javier Pérez", "1984-12-02", "09:00", "Chequeo"));
+        pacientes.add(new Paciente("Alejandra Vargas", "1991-11-15", "09:30", "Consulta de alergias"));
+        pacientes.add(new Paciente("Diego Gutiérrez", "1988-07-20", "10:00", "Control de colesterol"));
+        pacientes.add(new Paciente("Sara Jiménez", "1992-09-09", "10:30", "Chequeo"));
+        pacientes.add(new Paciente("Manuel Santos", "1994-10-22", "11:00", "Cita de seguimiento"));
+        pacientes.add(new Paciente("Elena Castro", "1986-03-11", "11:30", "Consulta general"));
+        pacientes.add(new Paciente("Rafael Díaz", "1995-01-29", "12:00", "Control de azúcar en sangre"));
+        pacientes.add(new Paciente("Isabel Navarro", "1990-12-05", "12:30", "Chequeo de rutina"));
+        pacientes.add(new Paciente("Gabriel Soto", "1989-06-23", "13:00", "Consulta de alergias"));
+        pacientes.add(new Paciente("Patricia Suárez", "1991-04-17", "13:30", "Control de hipertensión"));
+        pacientes.add(new Paciente("Esteban Ruiz", "1996-02-08", "14:00", "Cita de seguimiento"));
+        pacientes.add(new Paciente("Ana Gómez", "1987-10-18", "14:30", "Consulta general"));
+        pacientes.add(new Paciente("Oscar Martínez", "1993-03-19", "15:00", "Chequeo"));
+        pacientes.add(new Paciente("Verónica León", "1992-11-30", "15:30", "Consulta de alergias"));
+        pacientes.add(new Paciente("Roberto Vega", "1994-09-07", "16:00", "Control de diabetes"));
+        pacientes.add(new Paciente("Andrea Torres", "1988-02-14", "16:30", "Chequeo"));
+
     }
 
     public void mostrarPacientes() {

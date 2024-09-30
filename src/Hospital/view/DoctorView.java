@@ -68,26 +68,26 @@ public class DoctorView extends JFrame {
 
         // Datos de ejemplo para los pacientes
         String[][] patientData = {
-                {"Juan Pérez", "1990-01-15", "07:00", "Consulta general"},
-                {"María López", "1988-04-22", "07:30", "Chequeo"},
-                {"Carlos Ruiz", "1995-07-10", "08:00", "Control de diabetes"},
-                {"Ana Martínez", "1992-11-05", "08:30", "Cita de seguimiento"},
-                {"Luis González", "1985-03-15", "09:00", "Chequeo"},
-                {"Sofía Torres", "1993-06-18", "09:30", "Consulta de alergias"},
-                {"Fernando Hernández", "1989-08-24", "10:00", "Control de hipertensión"},
-                {"Isabel Castro", "1991-12-12", "10:30", "Chequeo"},
-                {"Jorge Silva", "1994-02-28", "11:00", "Cita de seguimiento"},
-                {"Patricia Ruiz", "1987-05-19", "11:30", "Consulta general"},
-                {"Ricardo Morales", "1996-03-22", "12:00", "Control de diabetes"},
-                {"Laura Reyes", "1990-10-30", "12:30", "Chequeo"},
-                {"Felipe Gómez", "1988-01-15", "13:00", "Consulta de alergias"},
-                {"Gloria Vega", "1992-12-05", "13:30", "Control de hipertensión"},
-                {"Andrés Castro", "1995-08-20", "14:00", "Cita de seguimiento"},
-                {"Diana Torres", "1986-06-11", "14:30", "Consulta general"},
-                {"Cristian Pérez", "1993-11-30", "15:00", "Chequeo"},
-                {"Karla Sánchez", "1991-09-25", "15:30", "Consulta de alergias"},
-                {"Julio Fernández", "1994-04-10", "16:00", "Control de diabetes"},
-                {"Beatriz López", "1989-02-14", "16:30", "Chequeo"}
+                {"Mateo Ramírez", "1990-03-21", "07:00", "Consulta general"},
+                {"Lucía Fernández", "1987-05-17", "07:30", "Chequeo de rutina"},
+                {"David Ortega", "1996-06-12", "08:00", "Control de presión arterial"},
+                {"Claudia Morales", "1993-08-07", "08:30", "Cita de seguimiento"},
+                {"Javier Pérez", "1984-12-02", "09:00", "Chequeo"},
+                {"Alejandra Vargas", "1991-11-15", "09:30", "Consulta de alergias"},
+                {"Diego Gutiérrez", "1988-07-20", "10:00", "Control de colesterol"},
+                {"Sara Jiménez", "1992-09-09", "10:30", "Chequeo"},
+                {"Manuel Santos", "1994-10-22", "11:00", "Cita de seguimiento"},
+                {"Elena Castro", "1986-03-11", "11:30", "Consulta general"},
+                {"Rafael Díaz", "1995-01-29", "12:00", "Control de azúcar en sangre"},
+                {"Isabel Navarro", "1990-12-05", "12:30", "Chequeo de rutina"},
+                {"Gabriel Soto", "1989-06-23", "13:00", "Consulta de alergias"},
+                {"Patricia Suárez", "1991-04-17", "13:30", "Control de hipertensión"},
+                {"Esteban Ruiz", "1996-02-08", "14:00", "Cita de seguimiento"},
+                {"Ana Gómez", "1987-10-18", "14:30", "Consulta general"},
+                {"Oscar Martínez", "1993-03-19", "15:00", "Chequeo"},
+                {"Verónica León", "1992-11-30", "15:30", "Consulta de alergias"},
+                {"Roberto Vega", "1994-09-07", "16:00", "Control de diabetes"},
+                {"Andrea Torres", "1988-02-14", "16:30", "Chequeo"}
         };
 
         // Agregar paneles para cada paciente
@@ -123,11 +123,11 @@ public class DoctorView extends JFrame {
         restricciones.fill = GridBagConstraints.HORIZONTAL;
         restricciones.gridx = 0;
 
-        menu.add(crearUnBoton("Opción 1"), restricciones);
-        menu.add(crearUnBoton("Opción 2"), restricciones);
-        menu.add(crearUnBoton("Opción 3"), restricciones);
-        menu.add(crearUnBoton("Opción 4"), restricciones);
-        menu.add(crearUnBoton("Opción 5"), restricciones);
+        menu.add(crearUnBoton("Consultas del día"), restricciones);
+        menu.add(crearUnBoton("Salas"), restricciones);
+        menu.add(crearUnBoton("Farmacia"), restricciones);
+        menu.add(crearUnBoton("Pacientes registrados"), restricciones);
+        menu.add(crearUnBoton("Citar en otra área"), restricciones);
 
         panelMenu.add(menu, BorderLayout.CENTER);
         return panelMenu;
