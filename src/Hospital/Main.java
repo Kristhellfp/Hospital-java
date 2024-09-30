@@ -1,3 +1,5 @@
+package Hospital;
+
 import Hospital.controller.LoginController;
 import Hospital.view.LoginView;
 import Hospital.backEnde.BackEnde;
