@@ -14,6 +14,17 @@ public class DoctorView extends JFrame {
         setLayout(new BorderLayout());
 
         // Panel de cabecera
+        JPanel headerPanel = createHeaderPanel(doctorData);
+        add(headerPanel, BorderLayout.NORTH);
+        add(componenteMenuLateral(), BorderLayout.WEST);
+
+        // Panel de pacientes
+        add(createPatientPanel(), BorderLayout.CENTER);
+
+        setVisible(true);
+    }
+
+    private JPanel createHeaderPanel(HashMap<String, String> doctorData) {
         JPanel headerPanel = new JPanel();
         headerPanel.setPreferredSize(new Dimension(1300, 60));
         headerPanel.setBackground(new Color(40, 44, 52));
@@ -24,6 +35,13 @@ public class DoctorView extends JFrame {
         hospitalLabel.setFont(new Font("Arial", Font.BOLD, 18));
         headerPanel.add(hospitalLabel, BorderLayout.WEST);
 
+        JPanel userPanel = createUserPanel(doctorData);
+        headerPanel.add(userPanel, BorderLayout.EAST);
+
+        return headerPanel;
+    }
+
+    private JPanel createUserPanel(HashMap<String, String> doctorData) {
         JPanel userPanel = new JPanel(new GridBagLayout());
         userPanel.setBackground(new Color(40, 44, 52));
         GridBagConstraints gbc = new GridBagConstraints();
@@ -37,7 +55,7 @@ public class DoctorView extends JFrame {
         userPanel.add(logoPanel, gbc);
 
         JLabel nombreDoctor = new JLabel(doctorData.get("Nombre"));
-        nombreDoctor.setForeground(new Color(255, 255, 255));
+        nombreDoctor.setForeground(Color.WHITE);
         nombreDoctor.setFont(new Font("Arial", Font.BOLD, 16));
         gbc.gridx = 1;
         gbc.gridy = 0;
@@ -51,15 +69,7 @@ public class DoctorView extends JFrame {
         gbc.gridy = 1;
         userPanel.add(especialidadDoctor, gbc);
 
-        headerPanel.add(userPanel, BorderLayout.EAST);
-
-        add(headerPanel, BorderLayout.NORTH);
-        add(componenteMenuLateral(), BorderLayout.WEST);
-
-        // Panel de pacientes
-        add(createPatientPanel(), BorderLayout.CENTER);
-
-        setVisible(true);
+        return userPanel;
     }
 
     private JScrollPane createPatientPanel() {
@@ -143,7 +153,11 @@ public class DoctorView extends JFrame {
         boton.setBorder(BorderFactory.createLineBorder(new Color(80, 80, 80), 1));
 
         boton.addActionListener(e -> {
-            System.out.println(texto);
+            if (texto.equals("Salas")) {
+                new SalasView(); // Abre la ventana de Salas
+            } else {
+                System.out.println(texto);
+            }
         });
 
         return boton;
