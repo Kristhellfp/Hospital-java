@@ -101,3 +101,4 @@ public class LoginView extends JFrame {
         loginButton.addActionListener(listener);
     }
 }
+
