@@ -155,12 +155,15 @@ public class DoctorView extends JFrame {
         boton.addActionListener(e -> {
             if (texto.equals("Salas")) {
                 new SalasView(); // Abre la ventana de Salas
+            } else if (texto.equals("Farmacia")) {
+                new FarmaciaView(); // Abre la ventana de Farmacia
             } else {
                 System.out.println(texto);
             }
         });
 
         return boton;
+
     }
 
     public static void main(String[] args) {
